@@ -1,0 +1,85 @@
+.container-fluid {
+    padding-left: 19%;
+    padding-right: 19%;
+    margin-bottom: 3%;
+}
+.row{
+    padding-top: 5%;
+}
+
+#h6{
+    letter-spacing: 1px;
+    color: #808285;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+p {
+    font-family: "Working Spirit";
+    font-size: 14px;
+    line-height: 24px;
+    color:  #808285;
+}
+#text {
+    padding-top: 8px;
+}
+#Opdrachten{
+    background-image: url(src/assets/Images/Opdrachten.png);
+    height: 180px;
+    width: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 16px;
+    border-radius: 40%;
+    align-self: center;
+    cursor: pointer;
+}
+#Voorbereiding {
+    background-image: url(src/assets/Images/Installatiehulp.png);
+    height: 180px;
+    width: 180px;
+    margin-left: 16px;
+    border-radius: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    cursor: pointer;
+}
+#Notities {
+    background-image: url(src/assets/Images/Notities2.png);
+    height: 180px;
+    width: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 16px;
+    border-radius: 40%;
+    align-self: center;
+    cursor: pointer;
+}
+#MijnOverzicht {
+    background-image: url(src/assets/Images/Profiel3.png);
+    height: 180px;
+    width: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 16px;
+    border-radius: 40%;
+    align-self: center;
+    cursor: pointer;
+}
+#h5 {
+    padding-top: 10px;
+    letter-spacing: 1px;
+    color: #808285;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 26px;
+    text-align: center;
+}
+
+.melding {
+    min-width: 100%;
+    margin-top: 3%;
+    margin-bottom: 0;
+}

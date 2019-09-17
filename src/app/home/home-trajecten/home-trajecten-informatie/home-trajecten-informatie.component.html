@@ -1,0 +1,58 @@
+<div class="container-fluid">
+
+    <!-- achtergrondafbeelding met titel -->
+    <div class="row">
+        <div class="landingspage-header">
+            <div class="container" id="background">
+                <h6>
+                    {{this.traject.naam}}
+                </h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- Traject informatie  -->
+    <div class="row">
+        <div class="col-sm-4" id="titel">
+            {{this.traject.naam}}
+        </div>
+        <div class="col-sm-8" id="text">
+            {{this.traject.omschrijving}}
+        </div>
+    </div>
+
+    <!-- Agenda van het traject -->
+    <div class="row">
+        <div class="col-sm-12" id="Agenda">
+            <table class="table table-bordered">
+                <thead id="tabel-headers">
+                    <tr>
+                        <th id="Datum">Datum</th>
+                        <th id="Tijdstip">Tijdstip</th>
+                        <th id="Informatie">Informatie</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let Trajectonderdeel of traject.trajectOnderdelen">
+                        <td>{{Trajectonderdeel.startdatum}}</td>
+                        <td>{{Trajectonderdeel.tijdstip}}</td>
+                        <td>{{Trajectonderdeel.naam}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Selectiefases behorend bij het traject -->
+    <div class="row" *ngFor="let Trajectonderdeel of traject.trajectOnderdelen">
+        <div class="col-sm-4" id="titel">
+            {{Trajectonderdeel.naam}}
+        </div>
+        <div class="col-sm-8" id="text">
+            {{Trajectonderdeel.omschrijving}}
+        </div>
+    </div>
+    <div class="row">
+                
+    </div>
+</div>

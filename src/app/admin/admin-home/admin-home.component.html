@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+            <h5>Welkom admin!</h5>
+        </div>
+        <div class="col-sm-6">
+            <p>
+                Welkom {{gebruiker.displaynaam}} op de academy. Klik hieronder op het onderwerp om het te beheren.
+                Bijvoorbeeld om nieuwe trajecten te maken of te wijzigen.
+            </p>
+        </div>
+    </div>
+    <div class="grijs">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="dashboard">
+                    <img id="linkBeheerWebtekst" src="assets/Images/tekstobject_wit.png">
+                    <h6>Webtekst beheren</h6>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="waves-effect waves-light rgba-white-slight">
+                    <img id="linkBeheerGebruikers" src="assets/Images/gebruikers_wit.png" [routerLink]="'./beheer-gebruikers'">
+                    <h6>Gebruikers beheren</h6>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 waves-effect waves-light rgba-white-slight">
+                <div class="dashboard">
+                    <img id="linkBeheerTrajecten" src="assets/Images/trajecten_wit.png" [routerLink]="'./beheer-traject/'">
+                    <h6>Trajecten beheren</h6>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="waves-effect waves-light rgba-white-slight">
+                    <img id="linkBeheerAssessments" src="assets/Images/assessments_wit.png" [routerLink]="'./beheer-assessments'">
+                    <h6>Assessments beheren</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

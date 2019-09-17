@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="container-fluid">
+        <div class="row">
+            <p id="traject-titel">{{traject.naam}}</p>
+        </div>
+        <div class="row ruimte buttons">
+            <div>
+                <button id="studentButton" routerLink="./docent-studentenlijst/{{traject.id}}" routerLinkActive="active">Studenten</button>
+                <button id="lesstofButton" [routerLink]="'./docent-aantekeningen'">Aantekeningen</button>
+                <button id="opdrachtButton" [routerLink]="'./docent-opdrachten'">Opdrachten</button>
+                <button id="uitwerkingButton" routerLink="./docent-uitwerkingen/{{traject.id}}">Uitwerkingen</button>
+            </div>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

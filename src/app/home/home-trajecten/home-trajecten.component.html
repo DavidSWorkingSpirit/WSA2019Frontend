@@ -1,0 +1,105 @@
+<div class="container-fluid">
+
+    <!-- Welkom woord -->
+    <div class="row">
+        <div id="h6" class="col-sm-4">
+            Welkom!
+        </div>
+        <div class="col-sm-8">
+            <p id="text">
+                Welkom bij de Working Spirit academy. Login voor meer informatie over jouw traject!
+                Nog geen deelnemer van een traject, bekijk hieronder de traject(en) die lopen of nog gaan starten.
+                Klik bij meerdere trajecten op de afbeeldingen voor meer informatie.
+            </p>
+        </div>
+    </div>
+
+    <!-- Trajecten onderdeel. Afhankelijk van het aantal zichtbare trajecten wordt er op deze pagina meerdere afbeeldingen geladen die 
+    corresponderen met verschillende trajecten, of er word uitgebreide informatie getoont over het enige zichtbare traject. -->
+    <div *ngFor="let Traject of zichtbaarTrajecten; let i=index;">
+        <div *ngIf="zichtbaarTrajecten.length > 1; else elseBlock">
+
+            <!-- Onderdeel als meerdere trajecten actief zijn -->
+            <div class="row">
+                <div class="col-md-4 col-xs-24">
+                    <div class="home-banner" [ngStyle]="{'background': 'url(' + afbeeldingen[i] + ') no-repeat 0 0'}"
+                        [style.background-size]="cover">
+                        <a (click)="gaNaarTrajectInformatie(Traject)">
+                            <div class="overlay">
+                                <div class="text">Ga naar {{Traject.naam}}</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div>
+                        <p id="subTitel">
+                            {{Traject.naam}}
+                        </p>
+                        <p id="trajectKorteOmschrijving{{Traject.id}}">
+                            {{Traject.korteOmschrijving}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Onderdeel als er maar 1 traject actief is -->
+        <ng-template #elseBlock>
+            <div class="row">
+                <div class="landingspage-header">
+                    <div class="container" id="backgroundWSA">
+                        <p id="h5">
+                            {{Traject.naam}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Traject informatie  -->
+            <div class="row">
+                <div class="col-sm-4" id="titel">
+                    {{Traject.naam}}
+                </div>
+                <div class="col-sm-8" id="text">
+                    {{Traject.omschrijving}}
+                </div>
+            </div>
+
+            <!-- Agenda van het traject -->
+            <div class="row">
+                <div class="col-sm-12" id="Agenda">
+                    <table class="table table-bordered">
+                        <thead id="tabel-headers">
+                            <tr>
+                                <th>Datum</th>
+                                <th>Tijdstip</th>
+                                <th>Informatie</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let Trajectonderdeel of traject.trajectOnderdelen">
+                                <td>{{Trajectonderdeel.startdatum}}</td>
+                                <td>{{Trajectonderdeel.tijdstip}}</td>
+                                <td>{{Trajectonderdeel.naam}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Selectiefases behorend bij het traject -->
+            <div class="row" *ngFor="let Trajectonderdeel of traject.trajectOnderdelen">
+                <div class="col-sm-4" id="titel">
+                    {{Trajectonderdeel.naam}}
+                </div>
+                <div class="col-sm-8" id="text">
+                    {{Trajectonderdeel.omschrijving}}
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+        </ng-template>
+    </div>
+</div>

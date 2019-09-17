@@ -1,0 +1,44 @@
+<div class="container-fluid" id="Filter_Gebruiker">
+    <div class="row">
+        <div>
+            <button id="trajecttoevoegknop" routerLink="../traject-toevoegen">Traject toevoegen</button>
+        </div>
+        <table class='table borderless col-lg-12'>
+            <thead id="table-bottom">
+                <tr>
+                    <th id="thNaam">Traject</th>
+                    <th id="thZichtbaar">Zichtbaar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let Traject of alleTrajecten">
+                    <td class="align" id="tdTraject{{Traject.id}}">{{Traject.naam}}</td>
+                    <td class="align" id="tdZichtbaar{{Traject.id}}">
+                        <div *ngIf="Traject.zichtbaar; else elseBlock">Ja</div>
+                        <ng-template #elseBlock>Nee</ng-template>
+                    </td>
+                    <td>
+                        <button id="tdWijzig{{Traject.id}}" routerLink="../traject-wijzigen/{{Traject.id}}">
+                            Bewerk traject
+                        </button>
+                    </td>
+                    <td>
+                        <button id="Koppel{{Traject.id}}" routerLink="../beheer-trajectgebruikers/{{Traject.id}}"
+                            routerLinkActive="active">
+                            Koppel gebruikers
+                        </button>
+                    </td>
+                    <td>
+                        <button id="resultaten{{Traject.id}}" routerLink="../beheer-resultaten/{{Traject.id}}"
+                            routerLinkActive="active">
+                            Zie resultaten
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="melding">
+            <alert id="alert-1"></alert>
+        </div>
+    </div>
+</div>

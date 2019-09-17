@@ -1,0 +1,21 @@
+<div class="row">
+    <table id="studentenlijst" class="table table-bordered">
+        <thead id="table-bottom">
+            <tr>
+                <th>Voornaam<i id='sorteerPijlVoornaam' class="fa fa-fw fa-sort" (click)="sorteerTabel(0)"></i></th>
+                <th>Achternaam<i id='sorteerPijlAchternaam' class="fa fa-fw fa-sort" (click)="sorteerTabel(1)"></i></th>
+                <th>E-mailadres<i id='sorteerPijlEmail' class="fa fa-fw fa-sort" (click)="sorteerTabel(1)"></i></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Gebruiker of studenten">
+                <td>{{Gebruiker.voornaam}}</td>
+                <td>{{Gebruiker.tussenvoegsel}} {{Gebruiker.achternaam}}</td>
+                <td>{{Gebruiker.emailadres}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="melding">
+        <alert id="alert-1"></alert>
+    </div>
+</div>

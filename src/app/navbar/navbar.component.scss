@@ -1,0 +1,172 @@
+.navbar {
+    background-color: #ffffff;
+    height: 5.5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container-fluid {
+    padding-left: 15%;
+    padding-right: 19%;
+}
+
+#navbarBrand{
+    padding-top: 7px;
+    width: 45px;
+}
+
+li a {
+    display: block;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #00aeef;
+    border-radius: 0%;
+    border: none;
+    background-color: #ffffff;
+    font-size: 10px;
+    margin-left: 6em;
+}
+
+.nav-link:hover {
+    display: block;
+    cursor: pointer;
+    border-radius: 0%;
+    background-color: #00aeef;
+    color: #ffffff;
+}
+
+#user-icon {
+    font-size: 16.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#ProfielButton:hover {
+    color: #ffffff;
+}
+
+#Login:hover {
+    color: #ffffff;
+}
+
+#Admin:hover, #Docent:hover, #Recruiter:hover, #Student:hover {
+    color: #ffffff;
+}
+
+.hamburgerButton {
+    font-size: 14px;
+    color: #00aeef;
+}
+
+#LoginHamburger {
+    font-size: 14px;
+    color: #00aeef; 
+}
+
+#LoginHamburger:hover{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#ProfielButtonHamburger {
+    font-size: 14px;
+    color: #00aeef; 
+}
+
+#ProfielButtonHamburger:hover {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#AdminButtonHamburger, #DocentButtonHamburger, 
+#RecruiterButtonHamburger, #StudentButtonHamburger {
+    font-size: 14px;
+    color: #00aeef; 
+}
+
+#AdminButtonHamburger:hover, #DocentButtonHamburger:hover, 
+#RecruiterButtonHamburger:hover, #StudentButtonHamburger:hover {
+    color: #ffffff;
+}
+
+#nav-hamburger {
+    position: absolute;
+    padding-top: 25px;
+    right: 5%;
+    padding-bottom: 7px;   
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0%;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}   
+ 
+@media (max-width: 65rem){
+    #hamburger {
+        visibility: visible;
+        width: 35px;
+        height: 4px;
+        background-color: #00aeef;
+        margin: 4px 0;
+        border-radius: 9px;
+     }
+
+     .nav-item {
+        visibility: hidden;
+        padding-top: 13.5px;
+        padding-bottom: 13.5px;
+    }
+}
+
+#vergetenWachtwoord {
+    padding-top: 1.5%;
+}
+
+#vergetenWachtwoord a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#wwvergetendiv {
+    padding-top: 1.5%;
+}
+
+#emailInput {
+    width: 49.75%;
+    padding: 1%;
+    margin-right: 0.25%;
+    border: none;
+    background-color: #ffffff;
+    color: #00aeef;
+}
+
+#melding {
+    margin-top: 1%;
+}
+
+.spinner {
+    margin-left: 80%;
+    margin-top: 130px;
+}

@@ -1,0 +1,14 @@
+<table >
+    <thead id="table-bottom">
+        <tr>
+          <th>Traject</th>
+          <th>Omschrijving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Traject of zichtbaarTrajecten">
+          <td id="tdNaam">{{Traject.naam}}</td>
+          <td id="tdOmschrijving">{{Traject.omschrijving}}</td>
+        </tr>
+    </tbody>
+</table>

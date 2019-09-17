@@ -1,0 +1,33 @@
+#mainbody {
+    background: #ffffff;
+    color: #808080;
+    font-size: 15px;
+}
+.container-fluid {
+    padding-left: 19%;
+    padding-right: 19%;
+}
+.row {
+    padding-top: 2.5%;
+}
+.introTitle {
+    font-size: 24px;
+    color: #808080;
+    font-weight: 400;
+    text-align: right;
+}
+.subIntroTitle{
+    font-size: 24px;
+    color: #808080;
+    text-align: right;
+}
+#clickWebsite{
+    color:#007bef;
+}
+#clickWebsite:hover{
+    cursor: pointer;
+    color: #00aeef;
+}
+#text {
+    padding-top: 9px;
+}

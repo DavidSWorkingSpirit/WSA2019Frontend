@@ -1,0 +1,124 @@
+.container-fluid {
+    padding-left: 19%;
+    padding-right: 19%;
+}
+.row{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#h6{
+    letter-spacing: 1px;
+    color: #808285;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 32px;
+    text-align: right;
+    margin-top: 20px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #808285;
+    
+}
+.home-banner{
+    width: 290px;
+    height: 230px;
+    margin-bottom: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+.home-banner:hover .overlay {
+    height: 100%;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00aaef;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    text-overflow: ellipsis;
+  }
+.text {
+    color: white;
+    font-size: 20px;
+    max-width: 290px;
+    max-height: 230px;
+    
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: keep-all;
+
+    text-align: center;
+       
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#titel{
+    letter-spacing: 1px;
+    color: #808285;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 32px;
+    text-align: right;
+}
+#subTitel{
+    letter-spacing: 1px;
+    color: #808285;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 32px;
+
+}
+#table-bottom,
+th {
+    background: #ffffff;
+    color: #696969;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-color: black
+}
+#table-bottom,
+td {
+    background: #ffffff;
+    color: #696969;
+    font-size: 15px;
+    border: 1px solid;
+    text-align: left;
+}
+#backgroundWSA {
+    background-image: url(src\assets\Images\Academy-people2.jpg);
+    height: 400px;
+    width: 960px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+#h5{
+    letter-spacing: 1px;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 195px;
+}
+

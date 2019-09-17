@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <h6>Notities</h6>
+        </div>
+        <div class="col=sm-8">
+            <p>Klik op één van de onderstaande buttons om de notities van die dag te bekijken.</p>
+        </div>
+    </div>
+    <ng-container *ngFor="let Aantekening of aantekeningen">
+        <div class="row">
+            <div class="col-sm-7 aantekeningtitel">
+                <p class="titelaantekening">{{Aantekening.titel}}</p>
+            </div>
+            <div class="col-sm-5">
+                <button id="aantekeningButton{{Aantekening.id}}" routerLink="../notitie-informatie/{{Aantekening.id}}">
+                    {{Aantekening.dag | date:'dd-MM-yyyy'}}
+                </button>
+            </div>
+        </div>
+    </ng-container>
+    <div class="row">
+        <div id="melding">
+            <alert id="alert-1"></alert>
+        </div>
+    </div>
+</div>
